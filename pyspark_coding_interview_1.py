@@ -11,11 +11,10 @@ pip install pillow
 from IPython.display import Image, display
 
 # Specify the path to the uploaded image
-image_path = '/Workspace/Users/100707-anv-28@deccansoftstudents.onmicrosoft.com/pyspark-coding-interview/data/name_hobbies.png.png
-'
+image_url = 'https://github.com/candidlpd/pyspark-coding-interview/blob/master/data/name_hobbies.png?raw=true'
 
 # Display the image
-display(Image(filename=image_path))
+display(Image(url=image_url))
 
 # COMMAND ----------
 
