@@ -47,4 +47,32 @@ dbutils.fs.ls("/")
 
 # COMMAND ----------
 
+dbutils.library.restartPython()
 
+# COMMAND ----------
+
+# Access the Spark context
+sc = spark.sparkContext
+
+# Display Spark context information
+spark_context_info = {
+    "Application Name": sc.appName,
+    "Master URL": sc.master,
+    "Version": sc.version,
+    "Is Active": sc._jsc is not None
+}
+
+display(spark_context_info)
+
+# COMMAND ----------
+
+!java -version
+
+# COMMAND ----------
+
+!pip list
+
+# COMMAND ----------
+
+import sys
+print(sys.executable)
